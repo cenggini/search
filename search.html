@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - Wordpress Expanding Search</title>
+  
+  
+  
+  
+      <style>
+      body{
+  background:#fff;
+}
+
+.search-form {
+	position: absolute;
+	right: 20px;
+	top: 1px;
+  border-radius:15px 15px 15px 15px;
+}
+
+.search-field {
+	background-color: transparent;
+	background-image: url(http://hasselpalm.com/wp-content/themes/twentythirteen/images/search-icon.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	border: none;
+	cursor: pointer;
+	height:37px;
+	margin: 5px 0;
+	padding: 0 0 0 25px;
+  border-radius:15px 15px 15px 15px;
+	position: relative;
+	-webkit-transition: width 700ms ease, background 400ms ease;
+	transition:         width 700ms ease, background 400ms ease;
+	width: 0;
+}
+
+.search-field:focus {
+	background-color: #fff;
+	border: 1px solid blue;
+  border-radius:15px 15px 15px 15px;
+	cursor: text;
+	outline: 0;
+	width: 261px;
+}
+
+.search-submit {
+  display: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <form role="search" method="get" class="search-form" action="/search">
+				<label>
+					<input type="search" 
+                class="search-field" 
+                placeholder="Cari, Tutorial, Aplikasi dan berita"  
+                value="" name="q" 
+                title="efter:">
+				</label>
+				<input type="submit" class="search-submit" value="search">
+			</form>
+  
+  
+  
+  
+  
+
+</body>
+
+</html>
+ 
